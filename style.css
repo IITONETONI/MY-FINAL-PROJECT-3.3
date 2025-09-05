@@ -785,11 +785,7 @@ PRICING ↓
         rgb(129, 230, 217) 100%);
 }
 
-.plan:nth-child(2)
-.plan__stripe,
-.plan:nth-child(2)
-.plan__button {
-    color: #f7fafc;
+.plan:nth-child(2) {
     background: linear-gradient(135deg,
         rgb(76, 81, 191) 0%,
         rgb(102, 126, 234) 100%);
@@ -868,6 +864,8 @@ PRICING ↓
     border-bottom: 2px solid rgb(229, 231, 235);
 }
 
+
+
 .plan:nth-child(2) .plan__middle {
     border-top: 2px solid
     rgb(102, 126, 234);
@@ -923,6 +921,15 @@ PRICING ↓
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 300ms ease-in-out,
+                box-shadow 300ms ease-in-out;
+}
+
+.plan__button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)
 }
 
 .plan:nth-child(2) .plan__button {
