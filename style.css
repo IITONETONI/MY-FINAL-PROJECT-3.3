@@ -780,22 +780,17 @@ PRICING ↓
 .plan:nth-child(1)
 .plan__button {
     color: #f7fafc;
-    background: linear-gradent(115deg,
+    background: linear-gradient(115deg,
         rgb(56, 178, 172) 0%,
         rgb(129, 230, 217) 100%);
-}
-
-.plan:nth-child(2) {
-    background: linear-gradient(135deg, rgb(76, 81, 191)
-    0%, rgb(102, 126, 234) 100%)
 }
 
 .plan:nth-child(2)
 .plan__stripe,
 .plan:nth-child(2)
 .plan__button {
-    counter: #f7fafc;
-    background: linear-gradent(135deg,
+    color: #f7fafc;
+    background: linear-gradient(135deg,
         rgb(76, 81, 191) 0%,
         rgb(102, 126, 234) 100%);
 }
@@ -805,7 +800,7 @@ PRICING ↓
 .plan:nth-child(3)
 .plan__button {
     color: #f7fafc;
-    background: linear-gradent(115deg,
+    background: linear-gradient(115deg,
         rgb(245, 101, 101) 0%,
         rgb(254, 178, 178) 100%);
 }
@@ -815,7 +810,7 @@ PRICING ↓
     left: 0px;
     right: 0px;
     top: 0px;
-    height: 0.1rem;
+    height: 0.5rem;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
