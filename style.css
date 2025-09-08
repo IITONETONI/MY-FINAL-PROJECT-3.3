@@ -178,7 +178,6 @@ NAVBAR ↓
     opacity: 0;
 }
 
-
 .nav__link:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
@@ -1407,10 +1406,13 @@ MOBILE RESPONSIVENESS ↓
 }
 
 @media (max-width: 1024px) {
+    .nav__links {
+        display: none;
+    }
 
     .btn__menu{
         display: block;
-}
+    }
 
     h1 {
         font-size: 30px;
@@ -1500,7 +1502,7 @@ MOBILE RESPONSIVENESS ↓
     }
 
     .start__row {
-        font-display: column;
+        flex-direction: column;
     }
 
     .start__title {
