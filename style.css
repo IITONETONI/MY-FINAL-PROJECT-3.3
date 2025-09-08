@@ -193,7 +193,7 @@ NAVBAR ↓
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: blue;
-    font-weight: bold;
+    font-weight: 600;
     border-bottom: 4px;
 }
 
@@ -1426,6 +1426,10 @@ MOBILE RESPONSIVENESS ↓
 }
 
 @media (max-width: 1024px) {
+    .main__header {
+        text-align: center;
+    }
+
     .nav__links {
         display: none;
     }
@@ -1453,6 +1457,7 @@ MOBILE RESPONSIVENESS ↓
     }
 
     .header__description--para {
+        text-align: center;
         margin: 24px 0;
     }
 
