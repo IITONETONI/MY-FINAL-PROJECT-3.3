@@ -189,12 +189,8 @@ NAVBAR ↓
     opacity: 0;
 }
 
-.nav__link:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: blue;
-    font-weight: 600;
-    border-bottom: 4px;
+.nav__link:hover::after {
+    opacity: 1;
 }
 
 .login {
