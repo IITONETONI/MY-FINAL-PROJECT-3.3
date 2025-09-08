@@ -61,6 +61,17 @@ h1 {
     line-height: 1.25;
 }
 
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
 h3 {
     display: block;
     font-size: 1.17em;
@@ -457,7 +468,6 @@ FEATURES ↓
 
 #features {
     position: relative;
-    padding: 0 32px;
 }
 
 #features .row__narrow {
@@ -466,16 +476,14 @@ FEATURES ↓
     align-items: center;
 }
 
-
-
-.row_narrow {
+.row__narrow {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
 }
 
 #features .section__title,
-#pricing .senction__title {
+#pricing .section__title {
     text-align: center;
 }
 
@@ -1248,10 +1256,6 @@ footer {
     opacity: 0.5;
 }
 
-.footer__row {
-
-}
-
 .footer__columns {
     margin-top: -48px;
     display: flex;
@@ -1355,11 +1359,18 @@ MOBILE RESPONSIVENESS ↓
 
 
 @media(max-width: 1280px) {
+    body {
+        font-size: 18px;
+    }
     
     h1 {
         font-size: 36px;
         color: #1a202c;
         line-height: 1.25;
+    }
+
+    .header__description {
+        flex-direction: row;
     }
     
     header .row {
@@ -1383,6 +1394,15 @@ MOBILE RESPONSIVENESS ↓
 
     .header__customers {
         padding-right: 64px;
+    }
+
+    .features {
+        flex-wrap: wrap;
+    }
+
+    .feature {
+        width: calc(50% - 10%);
+        margin: 10px;
     }
 
     .steps__grid {
@@ -1443,14 +1463,12 @@ MOBILE RESPONSIVENESS ↓
     .btn__menu {
         display: block;
     }
+
     header .row {
         flex-direction: column;
         align-items: center;
     }
-    footer {
-        padding: 80px 32px;
-    }
-
+    
     #features .section__title,
     #pricing .section__title {
         font-size: 48px;
@@ -1464,6 +1482,14 @@ MOBILE RESPONSIVENESS ↓
 
     .feature__title {
         line-height: 1;
+    }
+
+    .features {
+        max-width: 768px;
+    }
+
+    .feature {
+        width: calc(50%);
     }
 
     .quality__description {
@@ -1519,6 +1545,11 @@ MOBILE RESPONSIVENESS ↓
     .start-button {
         padding: 16px 32px;
     }
+
+    footer {
+        padding: 80px 32px;
+    }
+
 }
 
 @media(max-width: 768px) {
@@ -1526,13 +1557,28 @@ MOBILE RESPONSIVENESS ↓
     #values .row {
         flex-direction: column-reverse;
     }
+
     #steps .row,
     #testimonials .row {
         flex-direction: column;
         align-items: center;
     }
+
     #pricing .row {
         margin-top: 40px;
+    }
+
+    .div .row__narrow {
+        justify-content: center, space-between;
+    }
+
+    .features {
+        justify-content: center;
+    }
+
+    .feature {
+        width: auto;
+        max-width: 384px;
     }
 
     .quality__description,
@@ -1584,7 +1630,7 @@ MOBILE RESPONSIVENESS ↓
     }
 
     .footer__columns {
-        justify-content: flex-start;
+        justify-content: center, space-between;
     }
 
     .footer_column {
@@ -1712,7 +1758,7 @@ MOBILE RESPONSIVENESS ↓
     }
 
     .start__buttons {
-        font-display: column;
+        flex-direction: column;
     }
 
     .start__button {
